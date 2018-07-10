@@ -34,7 +34,7 @@ var firstName = prompt("What is your first name?");
 var lastName = prompt("What is your last name?");
 
 //logs users first name into the console, with concatenation
-Console.log(`User's first name is: ${firstName}`);
+console.log(`User's first name is: ${firstName}`);
 
 //Displays users last name by a pop up message
 alert(`Your last name is: ${lastName}`);
@@ -47,10 +47,10 @@ var bDay = prompt("When is your birthday (yyyy-mm-dd)?");
 var bDay = new Date(bDay);
 
 //confirming the date entered for their bday is accurate
-var bdayConfirm = confirm("Is the date you entered for your birthday correct?");
+var bdayConfirm = confirm(`Is ${bDay} you entered for your birthday correct?`);
 if (true)
   {
-    alert("Your birthday is:" + bDay.toDateString());
+    alert("Your birthday is: " + bDay);
   //alert("Your birthday is:" + bDay);
   }
 else
