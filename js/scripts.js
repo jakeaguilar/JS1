@@ -29,10 +29,7 @@ part of the string, is there another package i need to install? resorted to ES5 
 
 //Asks for users first mame
 var firstName = prompt("What is your first name?");
-if(firstName=null)
-{
 
-}
 //Asks for users last name
 var lastName = prompt("What is your last name?");
 
@@ -47,7 +44,7 @@ alert(`Your last name is: ${lastName}`);
 var bDay = prompt("When is your birthday (yyyy-mm-dd)?");
 
 //assigns user input for variable bDay to Date
-var bDay = new Date(bDay);ch
+var bDay = new Date(bDay);
 
 //confirming the date entered for their bday is accurate
 var bdayConfirm = confirm("Is the date you entered for your birthday correct?");
