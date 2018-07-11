@@ -1,7 +1,11 @@
 /*
 Base functionality of the requested application is working and correct. However, in error checking if the user does NOT enter anything
-for their name, it will still continue to execute the block rather than executing the else if. Also noticed the toLowerCase functions are not
-working as desired. Also would be nice to implement a loop for any null answers so they return to the original prompt, but all my attempts failed...
+for their name, it will still continue to execute the block rather than executing the else if.
+
+Also noticed the toLowerCase functions are not
+working as desired.
+
+Would be nice to implement a loop for any null answers so they return to the original prompt, but all my attempts failed...
 
 ALSO NEED TO ASK ABOUT GH PAGES!!!
 */
