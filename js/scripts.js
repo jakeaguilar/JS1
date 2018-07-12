@@ -10,7 +10,7 @@ Would be nice to implement a loop for any null answers so they return to the ori
 ALSO NEED TO ASK ABOUT GH PAGES!!!
 */
 var askName = prompt("What is your first and last name?", "John Doe");
-if(askName.toLowerCase() !== null){
+if(askName.toLowerCase() !== null && askName.toLowerCase() !== ""){
   var favColor = prompt(`Okay ${askName}, what is your favorite color out of the choices provided?, Colors: Red, Orange, Yellow, Green, Blue, Pink, Purple, Black, White,or Gray`);
   switch (favColor.toLowerCase())
   {
