@@ -9,3 +9,4 @@ var tio1Array = [
   "2011",
 ]
 console.log(tio1Array.length);
+alert(tio1Array[2]);
