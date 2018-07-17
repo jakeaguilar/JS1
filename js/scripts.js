@@ -1,3 +1,6 @@
+//ARRAYS
+
+/*
 let myArray = [];//Most Basic of Arrays
 let favFoods = ["pizza","hamburger","french fries"];
 
@@ -14,19 +17,22 @@ console.log(tio1Array, tio1Array.length);
 
 //check if its an array, and EVERY array is an object!
 console.log(Array.isArray(tio1Array), typeof tio1Array);
+*/
 
-
+/*
 // PUSH: the .push function of arrays adds values to the end of the array specified before the function, the .push function WILL
 //ACTUALLY change the value of the varialbe/array. Again arrays arent variables but the .push fucntion is essentially
 //reassigning your array with the original values plus the new value.
 console.log(tio1Array.push("Leo DiCaprio"));
 console.log(tio1Array, tio1Array.length);
+*/
 
 
+/*
 //UNSHIFT: just like the push function and how it acts but adds a value to the beginning of the array.
 tio1Array.unshift("Tim Mcgraw");
 console.log(tio1Array);
-
+*/
 
 
 /*
@@ -131,7 +137,8 @@ console.log(multiDimensional [0][0], multiDimensional[1][0])
 */
 
 
-//Try it Out 2 ARRAYS
+/*
+//TRY IT OUT 2 ARRAYS
 
 //Creating the master movie array and leaving empty to fill later
 var masterMovieArray = [];
@@ -162,3 +169,154 @@ console.log(favAndleast);
 //Step 4
 //to see the length of the masterMovieArray and how it has still has the same amount of values
 alert(masterMovieArray.length);
+*/
+
+
+
+//LOOPS!!
+
+
+/*
+FOR LOOPS
+
+In the condition part of the loop if you put, i >= 0, this will create an INFINITE LOOP and crash your browser or machine!!
+also if you write the modifier as, i--, this will also create an INFINITE LOOP, because as it runs 0 will become -1, and -2 and etc.
+and will always be less than 3
+
+/*
+for (let i = 0; i < 11; i++){
+  console.log(`The number is ${i * 10}`)
+}
+
+
+const colors = ["Blue", "Red", "Green", "Black", "Purple", "Pink"]
+
+//console.log(colors[0]);
+//console.log(colors[1]);
+//console.log(colors[2]);
+
+//when using "continue;" when executed it will ignore all code after the continue in that Block and continue the loop by going back to the modifier.
+//"break"; means when its executed, it will just out right stop the loop and continue the code after it.
+for(let index = 0; index < colors.length; index++){
+  console.log(colors[index]);
+  continue;
+  console.log("WHY cant you see meee!")
+}
+*/
+
+
+/*
+//WHILE LOOPS
+
+//With while loops you need to declare the varible before the actual loop, as opposed to for loops
+let counter = 0;
+
+//with while loops, you also need to input your own modifier (counter++) within the block itself, otherwise it would go on INFINITELY!
+//because counter is equal to 0 as stated ^^^ so while the counter is less than 10 (counter < 10), then it will execute that block of code
+//
+while(counter < 10){
+  console.log(`before ${counter}`);
+  counter++;
+  console.log(`after ${counter}`);
+}
+*/
+
+
+/*
+FOR EACH
+for each allows you to easily get the index, you dont often need to get the index but you can
+
+the CONSTANT VARIALBE, "captains" is an Array and is equal to the list of values of the captains names
+const captains = ["kirk", "picard", "sisko", "janeway", "lorca"];
+//so in the array "captains", the first word in the paraentheses "captain" is the name of a new variable, and the secord word "superHappyFunTime" is the index
+//for the second variable "superHappyFunTime", it doesnt matter the name you give it, the second value here will always be the index.
+captains.forEach( (captain, superHappyFunTime) => {
+  //here the console logs the variable captain in the "captains" array, along with its index
+  console.log(captain, superHappyFunTime);
+} );
+
+
+  //the same thing as above ^^^^ but without the =>
+  captains.forEach (function(captain, index){
+    console.log(captain, superHappyFunTime);
+  });
+*/
+
+
+
+/*
+FOR OF
+FOR OF is for ARRAYS!
+
+const captains = ["kirk", "picard", "sisko", "janeway", "lorca"];
+//the first variable "captain" will contain the value of each value in the array "captains", the second value is the array we are refering back to.
+//so let the variable "captain" take it's value from the values in the array "captains", and the console log will display the varialbe.
+for (let captain of captains) {
+  console.log(`oh captain my ${captain}!`)
+}
+*/
+
+
+/*
+FOR...IN
+FOR IN is for OBJECTS!
+
+const me = {
+  firstName: "Jake"
+  lastName: "Aguilar"
+  age: "24"
+}
+
+for (let property in me){
+  console.log(me[property]);
+}
+*/
+
+//TRY IT OUT
+
+
+/*
+FOR LOOPS
+
+In the condition part of the loop if you put, i >= 0, this will create an INFINITE LOOP and crash your browser or machine!!
+also if you write the modifier as, i--, this will also create an INFINITE LOOP, because as it runs 0 will become -1, and -2 and etc.
+and will always be less than 3
+
+/*
+for (let i = 0; i < 11; i++){
+  console.log(`The number is ${i * 10}`)
+}
+
+
+const colors = ["Blue", "Red", "Green", "Black", "Purple", "Pink"]
+
+//console.log(colors[0]);
+//console.log(colors[1]);
+//console.log(colors[2]);
+
+//when using "continue;" when executed it will ignore all code after the continue in that Block and continue the loop by going back to the modifier.
+//"break"; means when its executed, it will just out right stop the loop and continue the code after it.
+for(let index = 0; index < colors.length; index++){
+  console.log(colors[index]);
+  continue;
+  console.log("WHY cant you see meee!")
+}
+*/
+
+var masterMovieArray = [];
+
+//creating the 5 arrays of fav movies, just did SW as an example
+let fav1 = ["Phantom Menace", "Anakin"];
+let fav2 = ["Attack of the Clones", "Broda"];
+let fav3 = ["Revenge of the sith", "Vader"];
+let fav4 = ["New Hope", "Luke"];
+let fav5 = ["Empire Strikes Back", "Palpatine"]
+
+let masterMovieArray.push(fav1, fav2, fav3, fav4, fav5);
+
+
+for (let i = 0; i < masterMovieArray.length; i++){
+  if(masterMovieArray[i][0] === "Empire Strikes Back")
+  alert (`${masterMovieArray [i][0]} ${masterMovieArray[i][1]}`)
+
+}
