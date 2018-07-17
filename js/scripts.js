@@ -10,7 +10,7 @@ console.log(favFoods[1]);
 var tio1Array = ["Thor Ragnarok","13",true,"2011",];
 
 console.log(tio1Array, tio1Array.length);
-//alert(tio1Array[2]);
+//alert(tio1Array[2]); //alerts 3 values in the array
 
 //check if its an array, and EVERY array is an object!
 console.log(Array.isArray(tio1Array), typeof tio1Array);
@@ -56,12 +56,11 @@ console.log(firstValue);
 /*
 //SPLICE is able to change the values of an array by removing or adding values.
 //refer to SPLCE MDN
-//think of SPLCE as cutting a section of an array, like video editing it removes from a certain frame in the video to the ending frame youd want to remove.
+//think of SPLCE as cutting out a section of an array, like video editing it removes from a certain frame in the video to the ending frame youd want to remove.
 
 //1 arguement: Beginning with that index it will remove ALL indices after.
 //you can assign a variable to be the value you remove from the array
 // this removed "13" and "true"
-
  //let removed = tio1Array.splice(2);
 //console.log(tio1Array, removed);
 
@@ -132,7 +131,7 @@ console.log(multiDimensional [0][0], multiDimensional[1][0])
 */
 
 
-//Try it Out 2
+//Try it Out 2 ARRAYS
 
 //Creating the master movie array and leaving empty to fill later
 var masterMovieArray = [];
