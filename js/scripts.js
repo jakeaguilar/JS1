@@ -19,6 +19,7 @@ fucntion(string){
 //FUNCTION definintion, fucntion declares we creating a function definiton and the name of the function is addTwo()
 // we are taking the value num, and then adding 2
 //think as "num" as just an empty variable, so when we replace later, the value we put in the pararentheses will take become that variable
+
 function addTwo(num) {
   return num + 2;
 };
@@ -61,10 +62,7 @@ confirmStuff("Do you want to build a snowman?")
 */
 
 
-
-
-
-
+/*
 //RECURSION
 let i = 0;
 function iCallMyself() {
@@ -72,7 +70,7 @@ function iCallMyself() {
   i++;
   if(i < 10) iCallMyself();
 };
-
+*/
 
 
 /*
@@ -103,4 +101,38 @@ string => (string.toUpperCase());
 string => string.toUpperCase();
 */
 
+
 //DAY 5 Try it out is the take home
+/*
+DOES NOT WORK
+function dogAgeFunc(dogAgeInput){
+  let dogAgeInput = prompt("How old is your dog? (in years)" )
+  let dogAge = (dogAgeInput * 7);
+}
+
+alert(`Your dog is ${dogAge} in dog years!`);
+*/
+
+
+/**/
+function calLifetimeSupply(currentAge, dailyUse){
+  const endOfLife = 80;
+  if(isNaN(currentAge) && isNaN(dailyUse))
+  {
+    alert("Please enter a number!");
+    let currentAgeSecondTry = prompt("Whats your Age?");
+    let dailyUseSecondTry = prompt("How many per year?");
+  }
+  else
+  {
+    if(currentAge < 80)
+    {
+      let supply = (endOfLife - currentAge) * (dailyUse * 365);
+      alert(`You will need ${supply} to last until youre ${endOfLife}`)
+    }
+    else
+    {
+      alert("This is awkward...youre dead....")
+    }
+  }
+}
