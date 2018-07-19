@@ -103,21 +103,23 @@ string => string.toUpperCase();
 
 
 //DAY 5 Try it out is the take home
-/*
-DOES NOT WORK
-function dogAgeFunc(dogAgeInput){
-  let dogAgeInput = prompt("How old is your dog? (in years)" )
-  let dogAge = (dogAgeInput * 7);
+
+
+//why does var work vs let in "var dogAge = dogAgeInput * 7;"???
+var dogAgeInput = prompt("How old is your dog? (in years)" )
+function calcDogAge(dogAge){
+  var dogAge = (dogAgeInput * 7);
+  alert(`Your dog is ${dogAge} in dog years!`);
 }
 
-alert(`Your dog is ${dogAge} in dog years!`);
-*/
+calcDogAge();
 
 
-/**/
+
+/*
 function calLifetimeSupply(currentAge, dailyUse){
   const endOfLife = 80;
-  if(isNaN(currentAge) && isNaN(dailyUse))
+  if(isNaN(currentAge) || isNaN(dailyUse))
   {
     alert("Please enter a number!");
     let currentAgeSecondTry = prompt("Whats your Age?");
@@ -136,3 +138,6 @@ function calLifetimeSupply(currentAge, dailyUse){
     }
   }
 }
+
+calLifetimeSupply("will",24);
+*/
