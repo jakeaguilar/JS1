@@ -16,6 +16,7 @@ let temp = prompt("How hot is it?", "99");
    and converts the temperature they gave you to the opposite scale.
 */
 
+//Remember this is a function definition ONLY!!!
 function convertTemp(scale, temp) {
   scale =scale.toLowerCase();
   //returnVal is here because we dont want it to be global but local within the function, if done in the if block it wouldnt work
@@ -41,9 +42,11 @@ function convertTemp(scale, temp) {
 
 convertTemp(scale, temp);
 /*
-4. From that point on, when the user clicks on the h3, 
+4. From that point on, when the user clicks on the h3,
    run the function to convert the temperature back and forth between Celcius and Fahrenheit.
 */
+
+//the h3 part is the target
 h3.addEventListener("click", (e) => {
   let valueArr = e.target.innerText.split(" ");
   scale =
