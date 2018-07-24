@@ -106,13 +106,14 @@ string => string.toUpperCase();
 
 
 //why does var work vs let in "var dogAge = dogAgeInput * 7;"???
-var dogAgeInput = prompt("How old is your dog? (in years)" )
-function calcDogAge(dogAge){
-  var dogAge = (dogAgeInput * 7);
+
+function calcDogAge(dogAgeInput){
+  let dogAge = (dogAgeInput * 7);
   alert(`Your dog is ${dogAge} in dog years!`);
 }
 
-calcDogAge();
+var dogAgeInput = prompt("How old is your dog? (in years)" )
+calcDogAge(dogAgeInput);
 
 
 
