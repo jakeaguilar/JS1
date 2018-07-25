@@ -61,3 +61,5 @@ image.addEventListener("click", (e) => {
   image.setAttribute("src", trekkies)
 
 });
+
+//do try it out for take home
