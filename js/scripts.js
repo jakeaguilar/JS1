@@ -1,4 +1,4 @@
-
+/*
 const div = document.querySelector(".myDiv");
 const trekkies = "https://vignette.wikia.nocookie.net/memoryalpha/images/7/74/Enterprise_NX-01.jpg/revision/latest?cb=20160106180837&path-prefix=en";
 let image = document. querySelector ("img");
@@ -61,3 +61,31 @@ image.addEventListener("click", (e) => {
   image.setAttribute("src", trekkies)
 
 });
+*/
+//FizzBuzz Test
+let body = document.querySelector("body");
+let script = document.querySelector("script");
+
+function fB(n){
+  for(let i = 1; i <= n; i++){
+    let newP = document.createElement("p");
+    if(i % 3 === 0 && i % 5 === 0){
+      newP.textContent = "FIZZBUZZ";
+      //console.log("Fizz");
+    }
+    else if(i % 3 === 0){
+      newP.textContent = "FIZZ"
+      //console.log("FIZZ");
+    }
+    else if(i % 5 === 0){
+      newP.textContent = "BUZZ"
+      //console.log("BUZZ");
+    }
+    else{
+      newP.textContent = i;
+    }
+    body.insertBefore(newP, script);
+  }
+}
+
+fB(100);
