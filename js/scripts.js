@@ -1,7 +1,7 @@
 
 const div = document.querySelector(".myDiv");
 const trekkies = "https://vignette.wikia.nocookie.net/memoryalpha/images/7/74/Enterprise_NX-01.jpg/revision/latest?cb=20160106180837&path-prefix=en";
-let image = document. querySelector ("img");
+let image = document.querySelector ("img");
 
 //returns text (only) in ALL children as well
 //console.log(div.textContent);
@@ -61,3 +61,19 @@ image.addEventListener("click", (e) => {
   image.setAttribute("src", trekkies)
 
 });
+
+//TAKE HOME
+(btnTitleFunc) => {
+  let h1Title = document.createElement("h1");
+  new.h1Title = prompt("Enter the Title of your favorite book!", "Lord of the Rings: Fellowship of the Ring");
+
+}
+
+(formUserActivities) => {
+  let form = document.crea
+}
+
+(pUserColor) => {
+  let pUserFavColor = document.createElement("p");
+  new.pUserFavColor = prompt("Enter you favorite color from the following colors: ", "Red, Blue, Green, Yellow, Pink, Purple")
+}
