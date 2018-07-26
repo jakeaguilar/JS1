@@ -1,4 +1,4 @@
-
+/*
 const div = document.querySelector(".myDiv");
 const trekkies = "https://vignette.wikia.nocookie.net/memoryalpha/images/7/74/Enterprise_NX-01.jpg/revision/latest?cb=20160106180837&path-prefix=en";
 let image = document. querySelector ("img");
@@ -63,3 +63,4 @@ image.addEventListener("click", (e) => {
 });
 
 //do try it out for take home
+*/
