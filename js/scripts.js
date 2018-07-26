@@ -63,17 +63,53 @@ image.addEventListener("click", (e) => {
 });
 
 //TAKE HOME
-(btnTitleFunc) => {
-  let h1Title = document.createElement("h1");
-  new.h1Title = prompt("Enter the Title of your favorite book!", "Lord of the Rings: Fellowship of the Ring");
-
+function btnTitleFunc(elementType){
+  let h1Title = document.createElement(elementType);
+  h1Title.textContent = prompt("Enter the Title of your favorite book!, Lord of the Rings: Fellowship of the Ring");
 }
 
-(formUserActivities) => {
-  let form = document.crea
+function formUserActivities(){
+  let form = document.createElement("form");
 }
 
-(pUserColor) => {
+function pUserColor(){
   let pUserFavColor = document.createElement("p");
-  new.pUserFavColor = prompt("Enter you favorite color from the following colors: ", "Red, Blue, Green, Yellow, Pink, Purple")
+  new.pUserFavColor = prompt("Enter you favorite color from the following colors:, Colors: Red, Blue, Green, Yellow, Pink, Purple")
+
+  switch (pUserFavColor.toLowerCase())
+  {
+    case "red":
+      alert(`${pUserFavColor}, the color of the sith, you desire UNLIMITED POWAAHH!!`);
+      break;
+
+    case "blue":
+      alert(`${pUserFavColor},  you are a Jedi guardian and are trained to use the force on a more physical level to protect the Jedi order.`);
+      break;
+
+    case "green":
+      alert(`${pUserFavColor}, used by Jedi consulars you prefer to reflect and study on the mysteries of the Force.`);
+      break;
+
+    case "yellow":
+      alert(`${pUserFavColor} you are a rounded out Jedi, and are both adept in the study of the force and its combat applications.`);
+      break;
+
+    case "pink":
+      alert(`${pUserFavColor}, uhhhhh.... you have a pretty lightsaber color. Good job, i guess...`);
+      break;
+
+    case "purple":
+      alert(`${pUserFavColor},  hold on a minute... MACE, YOURE ALIVE?!?!?! `);
+      break;
+
+    case "":
+      alert(`You didnt specify a color!`);
+      var favColor = prompt(`Okay lets try this again, what is your favorite color out of the choices provided?, Colors: Red, Orange, Yellow, Green, Blue, Pink, Purple, Black, White,or Gray`);
+      break;
+
+    default:
+      alert(`${pUserFavColor} was not one of the choices provided before, try again!`);
+      //var favColor = prompt(`Okay lets try this again ${askName}, what is your favorite color out of the choices provided?, Colors: Red, Orange, Yellow, Green, Blue, Pink, Purple, Black, White,or Gray`);
+      break;
+  }
 }
