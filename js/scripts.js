@@ -36,6 +36,10 @@ ryeker.isAdmin = true;
 console.log(ryeker);
 */
 
+let emailInput = loginForm.email;
+let passInput = loginForm.password;
+let nameInput = loginForm.name
+
 function User (name, email, password){
   this.name = name;
   this.email = email;
