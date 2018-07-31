@@ -11,7 +11,39 @@
 </head>
 
 <body>
+  <!--
+  action: is the url where the data is sent to
 
+  name: allow you to name the input field
+
+  type: different types of forms
+
+  method:
+    GET: the default in a form is GET, unless you specify POST
+        lets says youre building and ecommerce, you are not gonna require
+        users to write query paramenters in the URL, they dont send you everything
+        but you send back data
+
+    POST: Expects for specific input, to provide a specific answer
+          YOU ALMOST ALWAYS WANT TO USE POST
+
+
+  -->
+  <form action="" name="login" method="POST">
+    <input type="email" name="email" required minlength="5">
+    <input type="password" name="password" required maxlength="6">
+
+    <!--
+    <input type="radio" name="" id="">
+    <input type="checkbox" name="" id="">
+    -->
+
+    <!--
+    button submit
+    -->
+    <button type="submit" name="btnSubmit">Login</button>
+
+  </form>
 
   <script src="js/scripts.js"></script>
 </body>
