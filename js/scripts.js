@@ -122,6 +122,5 @@ function storeUserInfo(){
 storeUserInfo();
 
 
-
 let retrievedValue = sessionStorage.getItem("firstName");
 alert(`Hey ${retrievedValue}!`);
